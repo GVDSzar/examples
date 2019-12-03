@@ -197,3 +197,82 @@ async function recoverAccountFromPrivateKey() {
   const pk = crypto.generatePrivateKey()
   const res = client.recoverAccountFromPrivateKey(pk)
 }
+
+async function getCSDTParameters() {
+  const client = await getClient(true)
+  const res = await client.getCSDTParameters()
+}
+
+async function getOracleAssets() {
+  const client = await getClient(true)
+  const res = await client.getOracleAssets()
+  try {
+    console.log(JSON.stringify(res))
+  } catch (err) {
+
+  }
+}
+
+async function depositCollateral() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.CSDT.depositCollateral(fromAddress, "tst", "1000000")
+  const res = await client.sendTx(msg, fromAddress)
+}
+
+async function withdrawCollateral() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.CSDT.withdrawCollateral(fromAddress, "tst", "1000000")
+  const res = await client.sendTx(msg, fromAddress)
+}
+
+async function settleDebt() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.CSDT.settleDebt(fromAddress, "tst", "csdt", "1000000")
+  const res = await client.sendTx(msg, fromAddress)
+}
+
+async function withdrawDebt() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.CSDT.withdrawDebt(fromAddress, "tst", "csdt", "1000000")
+  const res = await client.sendTx(msg, fromAddress)
+}
+
+async function postPrice() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.Oracle.postPrice(fromAddress, "tst", "0.1", "10000")
+  const res = await client.sendTx(msg, fromAddress)
+}
+
+async function addOracle() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.Oracle.addOracle(fromAddress, fromAddress, "tst")
+  const res = await client.sendTx(msg, fromAddress)
+}
+
+async function setOracles() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.Oracle.setOracles(fromAddress, [{address:fromAddress}], "tst")
+  const res = await client.sendTx(msg, fromAddress)
+}
+
+async function setAsset() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.Oracle.setAsset(fromAddress, "tst", "tst", "tst", "zar", [{address:fromAddress}], true)
+  const res = await client.sendTx(msg, fromAddress)
+}
