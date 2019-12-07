@@ -4,10 +4,14 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 
 ## Examples
 
-- [Oracle without SDK](./oracle-no-sdk.js)
-- [SDK examples](./sdk-examples.js)
+- [Oracle Without SDK](./oracle-no-sdk.js)
+- [SDK Examples](./sdk-examples.js)
+- [SDK Chain Setup](./bootrap-basics-testnet.js#L108)
 
 ## Token Management
+
+- [SDK Token Life Cycle](./bootrap-basics-testnet.js#L162)
+- [SDK Token Tests](./bootrap-basics-testnet.js#L260)
 
 - [SDK Get Tokens](./sdk-examples.js#L24)
 - [SDK Get Token](./sdk-examples.js#L29)
@@ -17,6 +21,8 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 - [SDK Burn Coins](./sdk-examples.js#L163)
 
 ## Chain Basics
+
+- [SDK Chain Setup](./bootrap-basics-testnet.js#L108)
 
 - [SDK Get Account](./sdk-examples.js#L35)
 - [SDK Get Node Info](./sdk-examples.js#L40)
@@ -34,12 +40,28 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 
 ## Oracles
 
+- [SDK Oracle Life Cycle](./bootrap-basics-testnet.js#L197)
+- [SDK Price Life Cycle](./bootrap-basics-testnet.js#L226)
+
 - [SDK Get Current Price](./sdk-examples.js#L80)
+- [SDK Get Oracle Assets](./sdk-examples.js#L206)
+- [SDK Post Price](./sdk-examples.js#L248)
+- [SDK Add Oracle](./sdk-examples.js#L256)
+- [SDK Set Oracles](./sdk-examples.js#L264)
+- [SDK Set Assets](./sdk-examples.js#L272)
 
 ## CSDTs
 
+- [SDK CSDT Life Cycle](./bootrap-basics-testnet.js#L36)
+
 - [SDK Get CSDT](./sdk-examples.js#L85)
+- [SDK Get CSDT Parameters](./sdk-examples.js#L201)
 - [SDK Create Or Modify CSDT](./sdk-examples.js#L90)
+- [SDK Deposit Collateral](./sdk-examples.js#L216)
+- [SDK Withdraw Collateral](./sdk-examples.js#L224)
+- [SDK Settle Debt](./sdk-examples.js#L232)
+- [SDK Withdraw Debt](./sdk-examples.js#L240)
+
 
 ## Recording
 
