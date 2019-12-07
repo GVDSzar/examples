@@ -12,7 +12,6 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 
 - [Token Life Cycle](./bootrap-basics-testnet.js#L162)
 - [Token Tests](./bootrap-basics-testnet.js#L260)
-
 - [Get Tokens](./sdk-examples.js#L24)
 - [Get Token](./sdk-examples.js#L29)
 - [Transfer Coins](./sdk-examples.js#L135)
@@ -23,7 +22,6 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 ## Chain Basics
 
 - [Chain Setup](./bootrap-basics-testnet.js#L108)
-
 - [Get Account](./sdk-examples.js#L35)
 - [Get Node Info](./sdk-examples.js#L40)
 - [Get Supply](./sdk-examples.js#L45)
@@ -42,7 +40,6 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 
 - [Oracle Life Cycle](./bootrap-basics-testnet.js#L197)
 - [Price Life Cycle](./bootrap-basics-testnet.js#L226)
-
 - [Get Current Price](./sdk-examples.js#L80)
 - [Get Oracle Assets](./sdk-examples.js#L206)
 - [Post Price](./sdk-examples.js#L248)
@@ -53,7 +50,6 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 ## CSDTs
 
 - [CSDT Life Cycle](./bootrap-basics-testnet.js#L36)
-
 - [Get CSDT](./sdk-examples.js#L85)
 - [Get CSDT Parameters](./sdk-examples.js#L201)
 - [Create Or Modify CSDT](./sdk-examples.js#L90)
