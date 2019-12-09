@@ -67,4 +67,8 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 
 - [Delegate](./bootrap-basics-testnet.js#L280)
 - [Undelegate](./bootrap-basics-testnet.js#L289)
+- [Get All Delegations](./bootrap-basics-testnet.js#L298)
+- [Get All Unbonding Delegations](./bootrap-basics-testnet.js#L303)
+- [Get All Bonded Validators](./bootrap-basics-testnet.js#L308)
+- [Get All Validators](./bootrap-basics-testnet.js#L313)
 
