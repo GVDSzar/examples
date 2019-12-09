@@ -294,3 +294,23 @@ async function undelegate() {
   const msg = client.Oracle.undelegate(fromAddress, validatorAddress, "ucsdt", "1000000")
   const res = await client.sendTx(msg, fromAddress)
 }
+
+async function getAllDelegations() {
+  const client = await getClient(true)
+  const res = await client.getAllDelegations("xar1yxd5lulpylvnzq3mkxs4jgpre3zp3eym2ptpcw")
+}
+
+async function getAllUnbondingDelegations() {
+  const client = await getClient(true)
+  const res = await client.getAllUnbondingDelegations("xar1yxd5lulpylvnzq3mkxs4jgpre3zp3eym2ptpcw")
+}
+
+async function getAllBondedValidators() {
+  const client = await getClient(true)
+  const res = await client.getAllBondedValidators("xar1yxd5lulpylvnzq3mkxs4jgpre3zp3eym2ptpcw")
+}
+
+async function getAllValidators() {
+  const client = await getClient(true)
+  const res = await client.getAllValidators()
+}
