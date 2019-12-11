@@ -71,4 +71,6 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 - [Get All Unbonding Delegations](./sdk-examples.js#L303)
 - [Get All Bonded Validators](./sdk-examples.js#L308)
 - [Get All Validators](./sdk-examples.js#L313)
+- [Get Delegator Rewards](./sdk-examples.js#L318)
+- [Withdraw Delegator Rewards](./sdk-examples.js#L323)
 
