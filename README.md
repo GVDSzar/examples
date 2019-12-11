@@ -65,6 +65,10 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 
 ## Staking
 
-- [Delegate](./bootrap-basics-testnet.js#L280)
-- [Undelegate](./bootrap-basics-testnet.js#L289)
+- [Delegate](./sdk-examples.js#L280)
+- [Undelegate](./sdk-examples.js#L289)
+- [Get All Delegations](./sdk-examples.js#L298)
+- [Get All Unbonding Delegations](./sdk-examples.js#L303)
+- [Get All Bonded Validators](./sdk-examples.js#L308)
+- [Get All Validators](./sdk-examples.js#L313)
 
