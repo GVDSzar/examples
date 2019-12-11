@@ -314,3 +314,20 @@ async function getAllValidators() {
   const client = await getClient(true)
   const res = await client.getAllValidators()
 }
+
+async function getDelegatorRewards() {
+  const client = await getClient(true)
+  const res = await client.getDelegatorRewards("xar1yxd5lulpylvnzq3mkxs4jgpre3zp3eym2ptpcw")
+}
+
+async function withdrawDelegatorRewards() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+  const validatorAddress = "xva1x3zca7yvrrnycqy4vc895m4t8djud0lru6qwfy"
+
+  const msg = client.Distribution.withdrawDelegatorRewards(
+    fromAddress,
+    validatorAddress,
+  )
+  const res = await client.sendTx(msg, fromAddress)
+}
