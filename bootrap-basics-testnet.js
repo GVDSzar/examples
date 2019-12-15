@@ -1,18 +1,18 @@
 const xar = require('@xar-network/javascript-sdk')
 
 /* make sure the address from the mnemonic has balances, or the case will failed */
-const root_mnemonic = ""
-const nominee_mnemonic = ""
-const issuer_mnemonic = ""
-const oracle_mnemonic = ""
-const RPC_URL = ""
+const root_mnemonic = "adult jazz main wool choice nation refuse critic soup before afraid arm celery ramp resemble blast elbow sail thing hill injury zone april fortune"
+const nominee_mnemonic = "enough ski cinnamon practice icon join unusual wage tide minor act robot embrace tiger sign spoil man april brick essence unit weather boy west"
+const issuer_mnemonic = "glow wife clip tail vacant fetch suffer such photo february arm guard post accuse bike royal blade lens maximum shiver garbage output repair debris"
+const oracle_mnemonic = "hazard category fish hungry border stay sure wonder home fine rotate aerobic skate never opinion hurdle twelve flat sting flee unfair into under bone"
+const RPC_URL = "http://54.229.172.186:1317/"
 
 /* testnet setup variables these should be keys - can be the same key */
 
-const root = ""
-const nominee = ""
-const oracle = ""
-const issuer = ""
+const root = "xar1ye5yutzp4c7hnnlyfu424r08l6dg9fp97g86eh"
+const nominee = "xar1r68t9xq82plt0jarpuqdvdkx97gu9rchg8eat4"
+const oracle = "xar1thhv2ppuz3y8l9scrl8uls35edl3j9q8lunc4e"
+const issuer = "xar13pe5ruhefjwrpgcaau2z49an2euexs7d8x9kqv"
 
 const getClient = async (mnemonic) => {
   const client = new xar(RPC_URL)

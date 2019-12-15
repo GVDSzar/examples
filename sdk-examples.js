@@ -331,3 +331,22 @@ async function withdrawDelegatorRewards() {
   )
   const res = await client.sendTx(msg, fromAddress)
 }
+
+async function getAllProposals() {
+  const client = await getClient(true)
+  const res = await client.getAllProposals()
+}
+
+async function getProposal() {
+  const client = await getClient(true)
+  const res = await client.getProposal("1")
+}
+
+async function vote() {
+  const client = await getClient(true)
+  const fromAddress = "xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5"
+
+  const msg = client.Gov.vote("1","Yes","xar13slrtrkn4hmhu88nlzhnk5s36t54wsugkvttg5")
+  const res = await client.sendTx(msg, fromAddress)
+  expect(res.status).toBe(200)
+}
