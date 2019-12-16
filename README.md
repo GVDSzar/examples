@@ -67,10 +67,17 @@ Please read the [contributing guide](./Contributing.md). Thank you to all our [c
 
 - [Delegate](./sdk-examples.js#L280)
 - [Undelegate](./sdk-examples.js#L289)
+- [Redelegate](./sdk-examples.js#L289)
 - [Get All Delegations](./sdk-examples.js#L298)
 - [Get All Unbonding Delegations](./sdk-examples.js#L303)
 - [Get All Bonded Validators](./sdk-examples.js#L308)
 - [Get All Validators](./sdk-examples.js#L313)
 - [Get Delegator Rewards](./sdk-examples.js#L318)
 - [Withdraw Delegator Rewards](./sdk-examples.js#L323)
+
+## Governance
+
+- [Get All Proposals](./sdk-examples.js#L335)
+- [Get a Proposal](./sdk-examples.js#L340)
+- [Vote](./sdk-examples.js#L345)
 
